@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Thanh toán</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <script type="module" src="assets/js/checkout.js" defer></script>
+  <script type="module" src="assets/js/utils.js" defer></script>
+  <script type="module" src="assets/js/data.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo" onclick="location.href='index.html'">📱 MobileShop</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html">Điện thoại</a></li>
+        <li><a href="cart.html"><span class="cart-icon"> 🛒 Giỏ hàng <span class="cart-count" id="cartCount">0</span></span></a></li>
+        <li><a href="orders.html">Đơn hàng</a></li>
+        <li><a href="login.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="checkout-form">
+    <h2 style="margin-bottom:2rem">📦 Thông tin thanh toán</h2>
+    <form id="checkoutForm">
+      <div class="form-group">
+        <label>Họ và tên *</label>
+        <input type="text" id="customerName" required>
+      </div>
+      <div class="form-group">
+        <label>Số điện thoại *</label>
+        <input type="tel" id="customerPhone" required>
+      </div>
+      <div class="form-group">
+        <label>Địa chỉ *</label>
+        <textarea id="customerAddress" rows="3" required></textarea>
+      </div>
+      <div class="payment-method">
+        <h3>💵 Phương thức thanh toán</h3>
+        <p style="margin-top:1rem">✅ Thanh toán khi nhận hàng (COD)</p>
+      </div>
+      <button type="submit" class="btn">Hoàn tất Đơn hàng</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

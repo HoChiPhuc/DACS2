@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <script type="module" src="assets/js/detail.js" defer></script>
+  <script type="module" src="assets/js/utils.js" defer></script>
+  <script type="module" src="assets/js/data.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo" onclick="location.href='index.html'">📱 MobileShop</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html">Điện thoại</a></li>
+        <li><a href="cart.html"><span class="cart-icon"> 🛒 Giỏ hàng <span class="cart-count" id="cartCount">0</span></span></a></li>
+        <li><a href="orders.html">Đơn hàng</a></li>
+        <li><a href="login.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="product-detail">
+    <button id="backBtn" class="btn btn-secondary" style="margin-bottom:2rem">← Quay lại</button>
+    <div id="productDetailContent"></div>
+  </div>
+</div>
+</body>
+</html>

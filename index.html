@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>MobileShop - Trang chủ</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <script type="module" src="assets/js/home.js" defer></script>
+  <script type="module" src="assets/js/utils.js" defer></script>
+  <script type="module" src="assets/js/data.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo" onclick="location.href='index.html'">📱 MobileShop</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html">Điện thoại</a></li>
+        <li><a href="cart.html"><span class="cart-icon"> 🛒 Giỏ hàng <span class="cart-count" id="cartCount">0</span></span></a></li>
+        <li><a href="orders.html">Đơn hàng</a></li>
+        <li><a href="login.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="banner">
+    <h1>🎉 Chào mừng đến MobileShop</h1>
+    <p>Điện thoại chính hãng - Giá tốt nhất thị trường</p>
+  </div>
+
+  <h2 class="section-title">⭐ Sản phẩm Nổi bật</h2>
+  <div id="featuredProducts" class="products-grid"></div>
+
+  <h2 class="section-title">🔥 Giảm giá Sốc</h2>
+  <div id="discountProducts" class="products-grid"></div>
+</div>
+</body>
+</html>

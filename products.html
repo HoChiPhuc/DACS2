@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Danh sách sản phẩm</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <script type="module" src="assets/js/products.js" defer></script>
+  <script type="module" src="assets/js/utils.js" defer></script>
+  <script type="module" src="assets/js/data.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo" onclick="location.href='index.html'">📱 MobileShop</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html">Điện thoại</a></li>
+        <li><a href="cart.html"><span class="cart-icon"> 🛒 Giỏ hàng <span class="cart-count" id="cartCount">0</span></span></a></li>
+        <li><a href="orders.html">Đơn hàng</a></li>
+        <li><a href="login.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="filters-section">
+    <input type="text" id="searchInput" class="search-bar" placeholder="🔍 Tìm kiếm điện thoại...">
+    <div class="filters">
+      <div class="filter-group">
+        <label>Thương hiệu</label>
+        <select id="brandFilter">
+          <option value="">Tất cả thương hiệu</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Khoảng giá</label>
+        <select id="priceFilter">
+          <option value="">Tất cả giá</option>
+          <option value="0-2000000">Dưới 2 triệu</option>
+          <option value="2000000-5000000">2 - 5 triệu</option>
+          <option value="5000000-10000000">5 - 10 triệu</option>
+          <option value="10000000-999999999">Trên 10 triệu</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="allProducts" class="products-grid"></div>
+</div>
+</body>
+</html>
